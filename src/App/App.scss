@@ -1,0 +1,109 @@
+$color1: red;
+$color2: whitesmoke;
+$color3: #fff;
+$color4: #000000;
+$color5: transparent;
+@font-face {
+	font-family: 'Lato-Medium';
+	src: url("../../public/fonts/Lato-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Lato-Regular';
+	src: url("../../public/fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Lato-Light';
+	src: url("../../public/fonts/Lato-Light.ttf") format("truetype");
+}
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	background-color: $color3;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: $color4;
+}
+.homepage {
+	min-height: 100vh;
+	background: $color5;
+	padding: 0;
+}
+a {
+	cursor: pointer;
+}
+.title {
+	color: $color1;
+	text-align: center;
+	font-family: 'Lato-Medium';
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 34px;
+}
+.information {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.information-title {
+	font-family: 'Lato-Regular';
+	color: $color1;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+}
+.information-description {
+	font-family: 'Lato-Light';
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: justify;
+}
+.gm-ui-hover-effect {
+  right: 0 !important;
+	top: 3px !important;
+  span {
+    height: 30px !important;
+    width: 30px !important;
+    margin: 0 !important;
+  }
+}
+ 
+.gm-style-iw-d {
+	margin-top: 25px;
+	margin-right: 5px;
+	padding-right: 5px;
+	overflow-y: auto !important;
+	overflow-x: hidden !important;
+	max-height: 500px !important;
+	width: 500px;
+}
+.gm-style {
+	.gm-style-iw-c {
+		background-color: $color2;
+		max-height: none !important;
+	}
+	.gm-style-iw-d {
+		&::-webkit-scrollbar-track {
+			background-color: $color2 !important;
+		}
+		&::-webkit-scrollbar-track-piece {
+			background-color: $color2 !important;
+		}
+	}
+}
